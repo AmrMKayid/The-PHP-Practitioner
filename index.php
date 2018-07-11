@@ -1,5 +1,6 @@
 <?php
 
+require "functions.php";
 
 $names = [
 
@@ -28,6 +29,8 @@ unset($person['age']);
 
 
 var_dump($person);
+
+dd($person);
 
 // die(); // Code ends here
 
