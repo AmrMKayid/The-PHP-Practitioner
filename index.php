@@ -12,7 +12,9 @@ $names = [
 // Dict
 $person = [
 	'age' => 21,
-	'name' => 'Amr'
+	'name' => 'Amr',
+	'grad' => false
+
 ];
 
 $person['career'] = 'Dev';
@@ -27,6 +29,6 @@ unset($person['age']);
 
 var_dump($person);
 
-die(); // Code ends here
+// die(); // Code ends here
 
 require "index.view.php";
