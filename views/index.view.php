@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>PHP Learning</title>
-	<style>
-		
-	</style>
+<?php require('partials/head.php'); ?>
 
-</head>
-<body>
 
-	<?php require('partials/nav.php'); ?>
+<form method="GET" action="/names">
 
-</body>
-</html>
+	<input name="name"></input>
+
+	<button type="submit">Submit</button>
+	
+
+</form>
+
+<?php require('partials/footer.php'); ?>
