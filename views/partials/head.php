@@ -9,7 +9,4 @@
 </head>
 <body>
 
-	<?php require('partials/nav.php'); ?>
-
-</body>
-</html>
+	<?php require('nav.php'); ?>
