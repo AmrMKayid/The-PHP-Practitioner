@@ -2,36 +2,63 @@
 
 require "functions.php";
 
-$names = [
+/**
+ * 
+ */
+class Task 
+{
+	protected $description;
+	protected $completed = false;
 
-	"Name1",
-	"Name2",
-	"Name3",
-];
+	public function __construct($description)
+	{
+		# code...
+		$this->description = $description;
+	}
+
+	public function complete() {
+		$this->completed = true;
+	}
+}
+
+$task = new Task('Task 1');
+
+$task->complete();
+
+dd($task);
 
 
-// Dict
-$person = [
-	'age' => 21,
-	'name' => 'Amr',
-	'grad' => false
+// $names = [
 
-];
-
-$person['career'] = 'Dev';
+// 	"Name1",
+// 	"Name2",
+// 	"Name3",
+// ];
 
 
-var_dump($person);
+// // Dict
+// $person = [
+// 	'age' => 21,
+// 	'name' => 'Amr',
+// 	'grad' => false
+
+// ];
+
+// $person['career'] = 'Dev';
 
 
-// Remove from array
-unset($person['age']);
+// var_dump($person);
 
 
-var_dump($person);
+// // Remove from array
+// unset($person['age']);
 
-dd($person);
 
-// die(); // Code ends here
+// var_dump($person);
+
+// dd($person);
+
+// // die(); // Code ends here
+
 
 require "index.view.php";
