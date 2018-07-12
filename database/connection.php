@@ -15,7 +15,7 @@ class Connection
 
 				$config['password'].
 
-				$config['options'].
+				$config['options']
 			);
 		} catch (PDOException $e) {
 			die($e->getMessage());
